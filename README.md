@@ -13,4 +13,4 @@
 <a href="https://raw.github.com/artpolikarpov/krutilka/master/MIT-LICENSE.txt">МИТ</a><br>
 Используйте, дорабатывайте, делайте всё, что угодно, не удаляйте отметку об авторстве.
 
-&copy; Артём Поликарпов — http://artpolikarpov.ru/
+&copy; <a href="http://artpolikarpov.ru/">Артём Поликарпов</a>, 2012
