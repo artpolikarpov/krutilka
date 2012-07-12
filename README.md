@@ -5,7 +5,7 @@
 
 Работает в браузерах с поддержкой СВГ.
 
-См. http://artgorbunov.ru/bb/soviet/20250730/
+См. http://artgorbunov.ru/bb/soviet/20120712/
 
 
 Лицензия
