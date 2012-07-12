@@ -5,11 +5,10 @@
 
 См. http://artgorbunov.ru/bb/soviet/20250730/
 
-Автор
------
-Артём Поликарпов — http://artpolikarpov.ru/
 
 Лицензия
 --------
-МИТ —
+<a href="https://raw.github.com/artpolikarpov/krutilka/master/MIT-LICENSE.txt">МИТ</a><br>
 Используйте, дорабатывайте, делайте всё, что угодно, не удаляйте отметки об авторстве.
+
+&copy; Артём Поликарпов — http://artpolikarpov.ru/
