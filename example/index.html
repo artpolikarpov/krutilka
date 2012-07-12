@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jquery Krutilka (Spinner) Plugin</title>
+  <script src="jquery-1.7.1.min.js"></script>
+  <script src="../krutilka.js"></script>
+
+  <style>
+    .hilite {
+      background: #ffc;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Jquery Krutilka (Spinner) Plugin</h1>
+
+<p>Default spinner:</p>
+
+<script>
+  $(function(){
+    $('#krutilka').krutilka();
+  });
+</script>
+
+<span id="krutilka"></span>
+
+<br><br><br>
+
+<p>Toggle spinner:</p>
+
+<script>
+  $(function(){
+    var krutilka = $('#krutilka-4');
+    var button = $('#toggle-krutilka-4');
+
+    krutilka.krutilka();
+
+    var FLAG = true;
+    button.click(function(){
+      FLAG = !FLAG;
+      if (FLAG) {
+        krutilka.trigger('show');
+        button.text('Hide krutilka');
+      } else {
+        krutilka.trigger('hide');
+        button.text('Show krutilka');
+      }
+    });
+  });
+</script>
+
+<button id="toggle-krutilka-4">Hide krutilka</button>
+
+<div style="width: 32px; height: 32px; margin-top: .5em;">
+  <span id="krutilka-4"></span>
+</div>
+
+
+<br><br><br>
+
+<p>Change speed:</p>
+
+<script>
+  $(function(){
+    var krutilka = $('#krutilka-5').krutilka();
+
+    var radio = $('input', '#radio-group');
+    radio.click(function(){
+      var time = $(this).val();
+      krutilka.trigger('show', time);
+    });
+
+    radio.eq(0).click();
+
+  });
+</script>
+
+<div id="radio-group">
+  <label><input type="radio" name="speed" value="5000" checked> EDGE</label>
+  &nbsp;
+  <label><input type="radio" name="speed" value="2500"> 3G</label>
+  &nbsp;
+  <label><input type="radio" name="speed" value="1000"> Wi-Fi</label>
+</div>
+
+<div style="margin-top: .5em;">
+  <span id="krutilka-5"></span>
+</div>
+
+<br><br><br>
+
+<p>Some skin customization:</p>
+
+<script>
+  $(function(){
+    $('#krutilka-2').krutilka({
+      petals: 9,
+      color: '#f00'
+    });
+  });
+</script>
+
+<span id="krutilka-2"></span>
+
+<br><br><br>
+
+
+<p>Whatever:</p>
+
+<script>
+  $(function(){
+    $('#krutilka-3').krutilka({
+      size: 64,
+      petals: 18,
+      petalWidth: 3,
+      petalOffset: 4,
+      petalLength: 12,
+      time: 2000,
+      color: 'white',
+      background: 'black'
+    });
+  });
+</script>
+
+<span id="krutilka-3"></span>
+
+<br><br><br>
+
+
+</body>
+</html>
